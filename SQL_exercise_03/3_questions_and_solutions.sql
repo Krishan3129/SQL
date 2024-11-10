@@ -1,6 +1,3 @@
--- The Warehouse
--- lINK: https://en.wikibooks.org/wiki/SQL_Exercises/The_warehouse
-
 --3.1
 -- Select all warehouses.
 select * from warehouses;
