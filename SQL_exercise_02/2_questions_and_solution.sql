@@ -1,4 +1,4 @@
--- LINK : https://en.wikibooks.org/wiki/SQL_Exercises/Employee_management
+
 
 -- 2.1 Select the last name of all employees.
 select LastName from Employees;
