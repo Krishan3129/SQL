@@ -1,5 +1,5 @@
 -- The Warehouse
--- lINK: https://en.wikibooks.org/wiki/SQL_Exercises/The_warehouse
+
 --3.1 Select all warehouses.
 --3.2 Select all boxes with a value larger than $150.
 --3.3 Select all distinct contents in all the boxes.
