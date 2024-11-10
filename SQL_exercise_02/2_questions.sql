@@ -1,4 +1,4 @@
--- LINK : https://en.wikibooks.org/wiki/SQL_Exercises/Employee_management
+
 -- 2.1 Select the last name of all employees.
 -- 2.2 Select the last name of all employees, without duplicates.
 -- 2.3 Select all the data of employees whose last name is "Smith".
