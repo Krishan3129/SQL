@@ -1,4 +1,3 @@
--- https://en.wikibooks.org/wiki/SQL_Exercises/Movie_theatres
 
 CREATE TABLE Movies (
   Code INTEGER PRIMARY KEY,
