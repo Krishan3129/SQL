@@ -1,4 +1,4 @@
--- https://en.wikibooks.org/wiki/SQL_Exercises/Movie_theatres
+
 -- 4.1 Select the title of all movies.
 select Title from movies;
 
