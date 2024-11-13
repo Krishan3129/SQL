@@ -1,4 +1,4 @@
--- https://en.wikibooks.org/wiki/SQL_Exercises/Pieces_and_providers
+
 
 show tables;
 
