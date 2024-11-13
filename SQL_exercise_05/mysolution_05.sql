@@ -1,4 +1,4 @@
--- https://en.wikibooks.org/wiki/SQL_Exercises/Pieces_and_providers
+
 -- 5.1 Select the name of all the pieces. 
 select Name from pieces;
 
