@@ -24,7 +24,6 @@ where pieces.Code in (select Piece
 
 -- 5.6
 -- ---------------------------------------------
--- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 -- Interesting and important one.
 -- For each piece, find the most expensive offering of that piece and include the piece name, provider name, and price 
 -- (note that there could be two providers who supply the same piece at the most expensive price).
