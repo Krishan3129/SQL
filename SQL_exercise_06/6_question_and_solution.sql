@@ -1,4 +1,4 @@
--- https://en.wikibooks.org/wiki/SQL_Exercises/Scientists
+
 
 -- 6.1
 -- List all the scientists' names, their projects' names, 
