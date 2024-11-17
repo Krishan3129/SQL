@@ -46,4 +46,6 @@ INSERT INTO Provides(Piece, Provider, Price) VALUES(2,'TNBC',14);
 INSERT INTO Provides(Piece, Provider, Price) VALUES(3,'RBT',50);
 INSERT INTO Provides(Piece, Provider, Price) VALUES(3,'TNBC',45);
 INSERT INTO Provides(Piece, Provider, Price) VALUES(4,'HAL',5);
+INSERT INTO Provides(Piece, Provider, Price) VALUES(3,'TNBC',5);
+INSERT INTO Provides(Piece, Provider, Price) VALUES(2,'HAL',25);
 INSERT INTO Provides(Piece, Provider, Price) VALUES(4,'RBT',7);
