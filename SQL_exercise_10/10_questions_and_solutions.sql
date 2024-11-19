@@ -1,5 +1,3 @@
--- Used SQLite3 for this example
-
 -- 10.1 Join table PEOPLE and ADDRESS, but keep only one address information for each person (we don't mind which record we take for each person). 
 -- i.e., the joined table should have the same number of rows as table PEOPLE
 
