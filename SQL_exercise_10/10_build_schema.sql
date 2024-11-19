@@ -1,5 +1,3 @@
--- Used SQLite3 for this example
-
 -- table PEOPLE: containing unique ID and corresponding names.
 CREATE TABLE PEOPLE (id INTEGER, name CHAR);
 
