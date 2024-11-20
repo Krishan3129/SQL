@@ -14,8 +14,7 @@ CREATE TABLE Provides (
  FOREIGN KEY (Piece) REFERENCES Pieces(Code),
  Provider VARCHAR(40), 
  FOREIGN KEY (Provider) REFERENCES Providers(Code),  
- Price INTEGER NOT NULL,
- PRIMARY KEY(Piece, Provider) 
+ Price INTEGER NOT NULL
  );
  
 -- alternative one for SQLite
