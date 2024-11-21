@@ -1,4 +1,4 @@
--- https://en.wikibooks.org/wiki/SQL_Exercises/Planet_Express 
+
 -- 7.1 Who receieved a 1.5kg package?
     -- The result is "Al Gore's Head".
     
