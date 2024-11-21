@@ -1,5 +1,3 @@
--- https://en.wikibooks.org/wiki/SQL_Exercises/Planet_Express
-
 CREATE TABLE Employee (
   EmployeeID INTEGER PRIMARY KEY,
   Name VARCHAR(255) NOT NULL,
