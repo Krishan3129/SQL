@@ -1,5 +1,3 @@
--- https://en.wikibooks.org/wiki/SQL_Exercises/Planet_Express 
-
 -- 7.1
 -- Who receieved a 1.5kg package?
 select Recipient from Package where Weight = 1.5;
