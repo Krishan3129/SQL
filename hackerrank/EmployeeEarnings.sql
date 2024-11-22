@@ -1,4 +1,3 @@
-/* https://www.hackerrank.com/challenges/earnings-of-employees */
 
 SELECT months*salary, COUNT(*) 
 FROM Employee
