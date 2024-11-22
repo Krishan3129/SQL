@@ -1,4 +1,4 @@
--- https://www.hackerrank.com/challenges/binary-search-tree-1/
+
 SELECT
     N,
     CASE WHEN P IS NULL THEN 'Root'
