@@ -1,5 +1,3 @@
--- https://en.wikibooks.org/wiki/SQL_Exercises/The_Hospital
-
 DROP TABLE IF EXISTS Physician;
 CREATE TABLE Physician (
   EmployeeID INTEGER NOT NULL,
