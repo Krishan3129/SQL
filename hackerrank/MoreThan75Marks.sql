@@ -7,4 +7,3 @@ WHERE
 ORDER BY 
     SUBSTR(Name,-3) ASC,
     ID ASC
-;
