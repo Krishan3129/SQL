@@ -18,4 +18,3 @@ FROM (
 ORDER BY
     CT ASC,
     OCCUPATION ASC
-;
