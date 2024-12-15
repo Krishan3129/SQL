@@ -1,4 +1,4 @@
-# Write your MySQL query statement below
+
 SELECT
     L.user_id,
     ROUND(
