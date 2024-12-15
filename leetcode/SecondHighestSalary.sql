@@ -1,4 +1,4 @@
-/* https://leetcode.com/problems/second-highest-salary/description/ */
+
 
 SELECT MAX(Salary) AS SecondHighestSalary
 FROM 
