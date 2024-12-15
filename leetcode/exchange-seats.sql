@@ -1,6 +1,4 @@
 
--- Soluton 1, 251 ms
-
 SELECT 
     id,
     CASE WHEN id % 2 != 0 AND id < (SELECT MAX(id) FROM seat) THEN lead_student
@@ -18,7 +16,8 @@ FROM (
 ) base
 ;
 
--- Solution 2, 601 ms
+
+
 SELECT
     id,
     CASE WHEN MOD(id, 2) = 0 THEN prev_student 
@@ -37,7 +36,6 @@ FROM (
 ) T
 ;
 
--- Solution 3, 590ms
 
 SELECT
     CASE WHEN MOD(id, 2) = 0 THEN id - 1
