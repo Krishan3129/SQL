@@ -1,5 +1,4 @@
-# https://leetcode.com/problems/human-traffic-of-stadium/
-# Write your MySQL query statement below
+
 SELECT 
     id,
     visit_date,
