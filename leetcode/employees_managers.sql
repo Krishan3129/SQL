@@ -1,4 +1,4 @@
-/* https://leetcode.com/problems/employees-earning-more-than-their-managers/description/ */
+
 SELECT E1.name as Employee
 FROM Employee E1 
 LEFT JOIN Employee E2
