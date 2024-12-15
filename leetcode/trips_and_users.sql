@@ -1,5 +1,3 @@
--- https://leetcode.com/problems/trips-and-users/submissions/
-
 
 # Write your MySQL query statement below
 SELECT 
