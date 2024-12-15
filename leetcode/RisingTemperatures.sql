@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/rising-temperature
+
 
 SELECT W1.Id
 FROM Weather AS W1
