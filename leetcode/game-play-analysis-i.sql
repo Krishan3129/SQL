@@ -7,4 +7,3 @@ FROM (    SELECT
         Activity
 ) BASE
 WHERE event_rnk = 1
-;
