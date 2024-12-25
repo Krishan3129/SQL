@@ -79,7 +79,20 @@ WHERE (continent, area) IN (
     FROM world
     GROUP BY continent
 )
+
+
 -- 8	First country of each continent (alphabetically)
+
+SELECT DISTINCT continent, 
+       FIRST_VALUE(name) OVER (PARTITION BY continent ORDER BY name) AS first_country
+FROM world
+ORDER BY first_country
+
+
 -- 9	Difficult Questions That Utilize Techniques Not Covered In Prior Sections
+
+
 -- 10	Three time bigger
+
+
 
