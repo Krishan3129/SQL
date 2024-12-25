@@ -63,7 +63,12 @@ WHERE continent = 'Europe'
 
 
 -- 6	Bigger than every country in Europe
-
+Select name 
+from world
+where gdp>
+(SELECT Max(gdp)
+FROM world
+WHERE continent='Europe')
 
 -- 7	Largest in each continent
 -- 8	First country of each continent (alphabetically)
