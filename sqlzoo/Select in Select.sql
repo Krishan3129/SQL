@@ -71,6 +71,14 @@ FROM world
 WHERE continent='Europe')
 
 -- 7	Largest in each continent
+
+SELECT continent, name, area
+FROM world
+WHERE (continent, area) IN (
+    SELECT continent, MAX(area)
+    FROM world
+    GROUP BY continent
+)
 -- 8	First country of each continent (alphabetically)
 -- 9	Difficult Questions That Utilize Techniques Not Covered In Prior Sections
 -- 10	Three time bigger
