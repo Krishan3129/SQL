@@ -11,14 +11,49 @@ SELECT SUM(population)
 FROM world
 
 
-
 -- 2	List all the continents - just once each.
+Select Distinct continent
+from world
+
+
 -- 3	Give the total GDP of Africa
+Select sum(gdp)
+from world
+where continent = 'Africa'
+
 -- 4	How many countries have an area of at least 1000000
+Select count(*)
+from world
+where area >=1000000
+
+
 -- 5	What is the total population of ('Estonia', 'Latvia', 'Lithuania')
+Select sum(population)
+from world
+where name IN ('Estonia', 'Latvia', 'Lithuania')
+
+
 -- 6	Count the big countries
+
+
+
 -- 7	Baltic states population
+
+
+
 -- 8	Using GROUP BY and HAVING
+
+
+
 -- 9	Counting the countries of each continent
+
+
+
 -- 10	Counting big countries in each continent
+
+
+
 -- 11	Counting big continents
+
+
+
