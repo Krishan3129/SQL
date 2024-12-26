@@ -33,15 +33,24 @@ from world
 where name IN ('Estonia', 'Latvia', 'Lithuania')
 
 
--- 6	Count the big countries
+-- 6	For each continent show the continent and number of countries.
+Select continent, count(name)
+from world
+group by continent
+
+
+-- 7	For each continent show the continent and number of countries with populations of at least 10 million.
+SELECT continent, 
+       COUNT(*) AS num_countries
+FROM world
+WHERE population >= 10000000
+GROUP BY continent
 
 
 
--- 7	Baltic states population
+-- 8	List the continents that have a total population of at least 100 million.
 
 
-
--- 8	Using GROUP BY and HAVING
 
 
 
