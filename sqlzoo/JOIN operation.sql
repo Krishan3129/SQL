@@ -23,3 +23,7 @@
 -- CZE	Czech Republic	Michal Bilek
 -- GRE	Greece	Fernando Santos
 -- ...
+
+
+-- show the matchid and player name for all goals scored by Germany. To identify German players, check for: teamid = 'GER'
+
