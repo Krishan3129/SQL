@@ -219,3 +219,85 @@ FROM posts
 where post_date between '01/01/2021' and '12/31/2021'
 GROUP by user_id
 having count(post_date)>1
+
+
+
+
+
+-- Write a query to identify the top 2 Power Users who sent the highest number of messages on Microsoft Teams in August 2022. 
+-- Display the IDs of these 2 users along with the total number of messages they sent. Output the results in descending order based on the count of the messages.
+
+-- Assumption:
+
+-- No two users have sent the same number of messages in August 2022.
+-- messages Table:
+-- Column Name	Type
+-- message_id	integer
+-- sender_id	integer
+-- receiver_id	integer
+-- content	varchar
+-- sent_date	datetime
+-- messages Example Input:
+-- message_id	sender_id	receiver_id	content	sent_date
+-- 901	3601	4500	You up?	08/03/2022 00:00:00
+-- 902	4500	3601	Only if you're buying	08/03/2022 00:00:00
+-- 743	3601	8752	Let's take this offline	06/14/2022 00:00:00
+-- 922	3601	4500	Get on the call	08/10/2022 00:00:00
+-- Example Output:
+-- sender_id	message_count
+-- 3601	2
+-- 4500	1
+
+
+
+SELECT sender_id, count(message_id) as messages_count
+FROM messages
+WHERE sent_date BETWEEN '08-01-2022' AND '08-31-2022'
+group by sender_id
+order by count(message_id) desc
+limit 2
+
+
+
+
+
+-- Assume you're given a table containing job postings from various companies on the LinkedIn platform. 
+-- Write a query to retrieve the count of companies that have posted duplicate job listings.
+
+-- Definition:
+
+-- Duplicate job listings are defined as two job listings within the same company that share identical titles and descriptions.
+-- job_listings Table:
+-- Column Name	Type
+-- job_id	integer
+-- company_id	integer
+-- title	string
+-- description	string
+-- job_listings Example Input:
+-- job_id	company_id	title	description
+-- 248	827	Business Analyst	Business analyst evaluates past and current business data with the primary goal of improving decision-making processes within organizations.
+-- 149	845	Business Analyst	Business analyst evaluates past and current business data with the primary goal of improving decision-making processes within organizations.
+-- 945	345	Data Analyst	Data analyst reviews data to identify key insights into a business's customers and ways the data can be used to solve problems.
+-- 164	345	Data Analyst	Data analyst reviews data to identify key insights into a business's customers and ways the data can be used to solve problems.
+-- 172	244	Data Engineer	Data engineer works in a variety of settings to build systems that collect, manage, and convert raw data into usable information for data scientists and business analysts to interpret.
+-- Example Output:
+-- duplicate_companies
+-- 1
+
+
+SELECT COUNT(company_id) - COUNT(DISTINCT(company_id,title,description)) 
+AS co_w_duplicate_jobs
+FROM job_listings;
+
+
+-- or
+
+SELECT
+  COUNT(a.company_id) as duplicate_companies
+FROM 
+(
+SELECT company_id
+FROM job_listings
+GROUP BY company_id, title, description
+HAVING count(*) > 1
+) as a
