@@ -347,3 +347,21 @@ def fizz_buzz_sum(target):
     if i%3 == 0 or i%5 == 0:
       sum += i
   return sum
+
+
+-- Given a number n, write a formula that returns n!.
+
+def factorial(n):
+    if n==0:
+        return 1
+    return n * factorial(n-1)
+
+-- or
+
+def factorial(n):
+  i = 1
+  result = 1
+  while i <= n:
+    result = result * i
+    i += 1
+  return result
