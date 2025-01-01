@@ -383,3 +383,33 @@ SELECT extract(MONTH from submit_date) as month, product_id, round(avg(stars),2)
 FROM reviews
 group by 1,2
 order by 1,2
+
+-- Assume you're given the tables containing completed trade orders and user details in a Robinhood trading system.
+
+-- Write a query to retrieve the top three cities that have the highest number of completed trade orders listed in descending order. 
+-- Output the city name and the corresponding number of completed trade orders.
+
+-- trades Table:
+-- Column Name	Type
+-- order_id	integer
+-- user_id	integer
+-- quantity	integer
+-- status	string ('Completed', 'Cancelled')
+-- date	timestamp
+-- price	decimal (5, 2)
+
+-- users Table:
+-- Column Name	Type
+-- user_id	integer
+-- city	string
+-- email	string
+-- signup_date	datetime
+    
+SELECT US.city, Count(*) as total_orders
+FROM trades T
+Left JOIN users US
+ON T.user_id = US.user_id
+where T.status ='Completed'
+GROUP BY US.city
+order by total_orders desc
+limit 3
