@@ -413,3 +413,28 @@ where T.status ='Completed'
 GROUP BY US.city
 order by total_orders desc
 limit 3
+
+
+-- Given an list of integers called input, return True if any value appears at least twice in the array. 
+-- Return False if every element in the input list is distinct.
+
+-- For example, if the input list was [1,3,5,7,1], then return True because the number 1 shows up twice.
+
+-- However, if the input was [1,3,5,7] then return False, because every element of the list is distinct.
+
+
+def contains_duplicate(input):
+  for i in range(len(input)-1):
+    for j in range(i+1, len(input)):
+      if (input[i] == input[j]):
+        return True
+  return False 
+
+-- or
+
+def contains_duplicate(input)-> bool:
+  new_list = list(set(input))
+  if new_list == input:
+    return False
+  else:
+    return True
