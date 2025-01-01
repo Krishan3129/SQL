@@ -365,3 +365,21 @@ def factorial(n):
     result = result * i
     i += 1
   return result
+
+-- Given the reviews table, write a query to retrieve the average star rating for each product, grouped by month. 
+-- The output should display the month as a numerical value, product ID, and average star rating rounded to two decimal places. Sort the output first by month and then by product ID.
+
+-- P.S. If you've read the Ace the Data Science Interview, and liked it, consider writing us a review?
+
+-- reviews Table:
+-- Column Name	Type
+-- review_id	integer
+-- user_id	integer
+-- submit_date	datetime
+-- product_id	integer
+-- stars	integer (1-5)
+
+SELECT extract(MONTH from submit_date) as month, product_id, round(avg(stars),2)
+FROM reviews
+group by 1,2
+order by 1,2
