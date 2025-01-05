@@ -15,3 +15,17 @@ where (user_id, transaction_date) in
 from transactions
 group by 1
 having count(user_id) = 3)
+
+-- or
+
+SELECT t.user_id, t.spend, t.transaction_date
+FROM
+(
+  select user_id, spend, transaction_date,
+  row_number() over (PARTITION by user_id order by transaction_date) as trans_no
+  from transactions
+) t
+where t.trans_no = 3
+
+
+
