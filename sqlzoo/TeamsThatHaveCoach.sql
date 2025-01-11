@@ -1,3 +1,4 @@
+-- Find thr date and team anme where coach is Fernando Santos
 SELECT 
   game.mdate, eteam.teamname
 FROM 
