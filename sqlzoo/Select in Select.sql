@@ -8,7 +8,7 @@
 
 
 -- Contents
--- 1	Bigger than Russia
+-- Bigger than Russia
 SELECT name 
 FROM world
 WHERE population >
